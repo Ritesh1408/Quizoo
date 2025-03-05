@@ -190,22 +190,20 @@ footer {
     background-color: #007bff;
     color: white;
     padding: 20px 0;
-    width: 100vw; /* Ensures full viewport width */
+    width: 100vw; 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Footer Content Wrapper */
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90vw; /* Prevents overflow */
+    width: 90vw; 
     max-width: 1200px;
 }
 
-/* Left Side: Logo & Slogan */
 .footer-left {
     display: flex;
     flex-direction: column;
@@ -221,7 +219,6 @@ footer {
     font-size: 16px;
 }
 
-/* Right Side: Social Media Links */
 .footer-right {
     display: flex;
     justify-content: flex-end;
@@ -234,7 +231,6 @@ footer {
     gap: 10px;
 }
 
-/* Social Media Icons */
 .social-media a {
     display: flex;
     justify-content: center;
@@ -242,7 +238,7 @@ footer {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #ffffff22; /* Subtle white tint */
+    background-color: #ffffff22; 
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -254,17 +250,15 @@ footer {
     transform: scale(1.1);
 }
 
-/* Individual Colors for Each Social Media */
-.social-media a:nth-child(1) { background-color: #1877F2; } /* Facebook */
-.social-media a:nth-child(2) { background-color: #1DA1F2; } /* Twitter */
-.social-media a:nth-child(3) { background-color: #E1306C; } /* Instagram */
+.social-media a:nth-child(1) { background-color: #1877F2; } 
+.social-media a:nth-child(2) { background-color: #1DA1F2; } 
+.social-media a:nth-child(3) { background-color: #E1306C; } 
 
-/* Bottom Copyright */
 .footer-bottom {
     margin-top: 10px;
     font-size: 14px;
     text-align: center;
-    width: 100vw; /* Prevents left-side overflow */
+    width: 100vw; 
     border-top: 1px solid white;
     padding-top: 10px;
 }

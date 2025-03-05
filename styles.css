@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&family=Sanchez:ital@0;1&display=swap");
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 20px;
+}
+
+#slogan {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#navbar {
+    background-color: #007bff;
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#navbar ul li {
+    display: inline;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+#navbar ul li a:hover {
+    color: #ffde59;
+}
+
+#quiz-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.section {
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.section[data-section="0"] { background-color: #ffcc00; }
+.section[data-section="1"] { background-color: #ff5733; }
+.section[data-section="2"] { background-color: #33c1ff; }
+.section[data-section="3"] { background-color: #33ff77; }
+.section[data-section="4"] { background-color: #a833ff; }
+
+#question-container {
+    display: none;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#score {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+#question {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#options div {
+    padding: 12px;
+    margin: 8px;
+    background-color: #ffffff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#options div:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.05);
+}
+#prev-button{
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+#next-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#next-button:hover {
+    background-color: #0056b3;
+}
+
+.selected {
+    background-color: #007bff !important;
+    color: white !important;
+}
+
+input[type="text"], input[type="number"] {
+    width: 90%;
+    padding: 12px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+}
+
+button.submit-answer {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button.submit-answer:hover {
+    background-color: #218838;
+}
+
+footer {
+    margin-top: 40px;
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+    width: 100vw; /* Ensures full viewport width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer Content Wrapper */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw; /* Prevents overflow */
+    max-width: 1200px;
+}
+
+/* Left Side: Logo & Slogan */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-left h4 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.footer-left p {
+    font-size: 16px;
+}
+
+/* Right Side: Social Media Links */
+.footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-right .social-media {
+    display: flex;
+    gap: 10px;
+}
+
+/* Social Media Icons */
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff22; /* Subtle white tint */
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.social-media a:hover {
+    background-color: #ffffff44;
+    transform: scale(1.1);
+}
+
+/* Individual Colors for Each Social Media */
+.social-media a:nth-child(1) { background-color: #1877F2; } /* Facebook */
+.social-media a:nth-child(2) { background-color: #1DA1F2; } /* Twitter */
+.social-media a:nth-child(3) { background-color: #E1306C; } /* Instagram */
+
+/* Bottom Copyright */
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    width: 100vw; /* Prevents left-side overflow */
+    border-top: 1px solid white;
+    padding-top: 10px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizoo</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/your-kit.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1 id="logo">Quizoo</h1>
+    <p id="slogan">Test your knowledge</p>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="quiz-container">
+        <div class="section" data-section="0">General Knowledge</div>
+        <div class="section" data-section="1">Science</div>
+        <div class="section" data-section="2">Mathematics</div>
+        <div class="section" data-section="3">Indian History</div>
+        <div class="section" data-section="4">Computer Science</div>
+    </div>
+    <div id="question-container" style="display: none;">
+        <p id="score">Score : 0</p>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="prev-button">Prev</button>
+        <button id="next-button">Next</button>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-left">
+                <h4>Quizoo</h4>
+                <p>Test your knowledge</p>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2025 Quizoo. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+
